@@ -1,0 +1,92 @@
+
+
+/* Aggiusta padding per navbar fissa */
+body {
+    padding-top: 120px;
+    /* Altezza stimata navbar + margine */
+    background-color: #f8f9fa;
+    /* Sfondo body leggermente diverso */
+}
+
+.app-window {
+    border: 1px solid #ccc;
+    border-top: none;
+    /* Rimuovi bordo superiore */
+    border-radius: 0 0 5px 5px;
+    /* Arrotonda solo angoli inferiori */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 20px;
+    /* Aggiungi margine inferiore */
+}
+
+/* Rimuovi title-bar e menu-bar styles */
+.info-bar {
+    /* Manteniamo questa barra specifica */
+    padding: 8px 10px;
+    font-size: 0.8em;
+    font-family: monospace;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-top: 1px solid #ccc;
+    /* Aggiungi bordo sopra se app-window non lo ha più */
+}
+
+.content-area {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.status-bar {
+    background-color: #e9ecef;
+    padding: 3px 10px;
+    border-top: 1px solid #ccc;
+    font-size: 0.9em;
+    color: #6c757d;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+    font-size: 0.9em;
+    padding: 0.4rem 0.5rem;
+}
+
+.table thead th {
+    background-color: #e9ecef;
+}
+
+.info-line {
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+.info-line strong {
+    display: inline-block;
+    min-width: 100px;
+}
+
+.back-link {
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+/* Modificato per non essere block */
+
+/* Stile per dropdown menu: rimuove inline e center se non desiderato */
+.dropdown-menu {
+    /* Rimuovi 'list-inline text-center' se preferisci layout standard */
+}
+
+/* Assicura visibilità logo su sfondi chiari */
+.navbar-brand img {
+    background-color: transparent;
+}
+

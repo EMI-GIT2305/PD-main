@@ -1,0 +1,102 @@
+/* Aggiusta padding per navbar fissa */
+body {
+    padding-top: 120px;
+    /* Altezza stimata navbar + margine */
+    background-color: #f0f0f0;
+}
+
+.app-window {
+    border: 1px solid #ccc;
+    border-top: none;
+    /* Rimuovi bordo superiore */
+    border-radius: 0 0 5px 5px;
+    /* Arrotonda solo angoli inferiori */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+    /* Aggiungi margine inferiore */
+}
+
+/* Rimuovi title-bar e menu-bar styles */
+.content-area {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.status-bar {
+    background-color: #e9ecef;
+    padding: 3px 10px;
+    border-top: 1px solid #ccc;
+    font-size: 0.9em;
+    color: #6c757d;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.filter-section {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.filter-section h6 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.table-container {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+    font-size: 0.85em;
+    padding: 0.3rem 0.4rem;
+    white-space: nowrap;
+}
+
+.table thead th {
+    background-color: #e9ecef;
+}
+
+.route-table-container {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.clickable-row {
+    cursor: pointer;
+}
+
+tr[data-href]:hover {
+    background-color: #cfe2ff !important;
+}
+
+.footer-message {
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 15px;
+}
+
+.action-buttons {
+    text-align: right;
+    margin-top: 15px;
+}
+
+/* Stile per dropdown menu: rimuove inline e center se non desiderato */
+.dropdown-menu {
+    /* Rimuovi 'list-inline text-center' se preferisci layout standard */
+    /* width: auto; /* Rimuovi w-100 se vuoi larghezza automatica */
+}
+
+/* Assicura visibilità logo su sfondi chiari */
+.navbar-brand img {
+    background-color: transparent;
+}
+

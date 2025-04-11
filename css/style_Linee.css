@@ -1,0 +1,218 @@
+
+body {
+    margin: 0;
+}
+
+/* Stili Menu */
+.menu {
+    background-color: #f8f9fa;
+    padding: 8px 0; /* Padding ridotto */
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+    }
+
+    .menu li {
+        display: inline;
+        margin: 0 10px; /* Margine ridotto */
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #343a40;
+        font-size: 0.85rem; /* Font ridotto */
+    }
+
+        .menu a:hover {
+            color: #007bff;
+        }
+
+/* Stili Filtri */
+.filter-container {
+    width: 90%;
+    margin: 15px auto; /* Margine ridotto */
+    padding: 10px; /* Padding ridotto */
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+  /*  margin-top: 160px !important;*/
+}
+
+.mt-16 {
+    margin-top: 160px !important;
+}
+
+.filter-section {
+    margin-bottom: 0.8rem; /* Margine ridotto */
+}
+
+    .filter-section h5 {
+        margin-bottom: 0.5rem; /* Margine ridotto */
+        font-weight: bold;
+        font-size: 1.1rem; /* Font H5 ridotto */
+    }
+
+/* Input filtri più piccoli */
+.form-control.mb-2 {
+    font-size: 0.8rem; /* Font ridotto */
+    padding: 0.25rem 0.5rem; /* Padding ridotto */
+    height: auto; /* Altezza automatica basata su font/padding */
+}
+
+.list-box {
+    height: 130px; /* Altezza ridotta */
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-box-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    border-bottom: 1px solid #dee2e6;
+    padding: 0.25rem 0.5rem; /* Padding ridotto */
+    font-size: 0.8rem; /* Font ridotto */
+    background-color: #f8f9fa;
+    flex-shrink: 0;
+}
+
+    .list-box-header span {
+        flex: 1;
+        padding: 0 4px; /* Padding ridotto */
+    }
+
+.list-box-content {
+    overflow-y: auto;
+    flex-grow: 1;
+    padding: 0.25rem 0.5rem; /* Padding ridotto */
+}
+
+.list-box-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.15rem 0; /* Padding ridotto */
+    font-size: 0.8rem; /* Font ridotto */
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+    .list-box-item:last-child {
+        border-bottom: none;
+    }
+
+    .list-box-item span {
+        flex: 1;
+        padding: 0 4px; /* Padding ridotto */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .list-box-item:hover {
+        background-color: #e9ecef;
+    }
+
+    .list-box-item.selected {
+        background-color: #cfe2ff;
+        font-weight: bold;
+    }
+
+
+/* Stili Timeline */
+.timeline-container {
+    display: none;
+    width: 90%;
+    margin: 15px auto; /* Margine ridotto */
+    overflow-x: auto;
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 10px; /* Padding ridotto */
+
+}
+
+.table-wrapper {
+    /* Altezza riga stimata ~24px (padding 0.4*2 + font ~0.8 + bordi) */
+    max-height: calc(40px * 11); /* Altezza massima ridotta */
+    overflow-y: auto;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+    .table thead {
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 3;
+    }
+
+    .table th, .table td {
+        padding: 0.4rem; /* Padding ridotto */
+        text-align: center;
+        white-space: nowrap;
+        font-size: 0.8rem; /* Font ridotto */
+        height: 24px; /* Altezza cella ridotta */
+        border: 1px solid #dee2e6;
+    }
+
+    .table th {
+        background-color: #f8f9fa;
+    }
+
+        .table th:first-child, .table td:first-child {
+            text-align: left;
+            position: sticky;
+            left: 0;
+            background-color: white;
+            z-index: 2;
+        }
+
+.timeline-bar {
+    height: 65%; /* Leggermente ridotta % altezza barra */
+    border-radius: 0.2rem; /* Bordo ridotto */
+    display: block;
+}
+
+.month-header {
+    border-right: 1px solid #dee2e6;
+}
+
+.timeline-cell {
+    padding: 0 !important;
+    /* display: flex; Rende la cella un contenitore flex */
+    align-items: center; /* Allinea l'elemento figlio (la barra) verticalmente al centro */
+    justify-content: center;
+}
+
+.table thead tr:first-child th {
+    border-bottom: none;
+}
+
+.table thead tr:last-child th {
+    border-top: none;
+}
+
+    .table thead tr:last-child th:first-child {
+        border-left: none;
+    }
+
+.table thead tr:first-child th:first-child {
+    vertical-align: bottom;
+}
+
+.table thead tr:nth-child(2) th {
+    background-color: #f8f9fa;
+}
